@@ -1,4 +1,4 @@
-class ship{
+export class ship{
     constructor(len){
         this.length = len
         this.hits = 0
@@ -11,5 +11,5 @@ class ship{
     isSunken(){
         return this.hits === this.hits.length? true: false
     }
-    
+
 }
