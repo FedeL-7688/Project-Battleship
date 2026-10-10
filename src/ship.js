@@ -1,11 +1,15 @@
 class ship{
-    constructor(len,hitN){
+    constructor(len){
         this.length = len
-        this.hits = hitN
+        this.hits = 0
         this.sunken = false
     }
 
     hits(){
         return this.hits++
     }
+    isSunken(){
+        return this.hits === this.hits.length? true: false
+    }
+    
 }
