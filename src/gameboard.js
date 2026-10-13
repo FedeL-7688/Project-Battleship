@@ -1,5 +1,5 @@
-import {ship} from './ship.js'
-
+import {Ship} from './ship.js'
+import Node from "./node.js"
 class Gameboard{
     constructor(){
             this.board = []
@@ -13,7 +13,12 @@ class Gameboard{
     return false
    }
 
-    placeShip(){
-     
+    placeShip(axis){
+     if (axis!=='x'||axis!=='y'){
+        throw new Error("choose a proper axis (X or Y)")
+     }
+     let ship = new Ship()
+
+    
     }
 }
